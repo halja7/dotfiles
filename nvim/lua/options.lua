@@ -22,3 +22,20 @@ vim.opt.laststatus = 2           -- Always display the status line
 
 vim.opt.number = true            -- Show line numbers
 vim.opt.relativenumber = true    -- Relative line numbers
+
+vim.opt.title = true
+vim.opt.hlsearch = true
+vim.opt.backup = false
+vim.opt.showcmd = true
+vim.opt.cmdheight = 1
+vim.opt.laststatus = 2
+vim.opt.scrolloff = 10
+vim.opt.shell = 'zsh'
+vim.opt.backupskip = { '/tmp/*', '/private/tmp/*' }
+vim.opt.inccommand = 'split'
+vim.opt.breakindent = true
+vim.opt.shiftwidth = 2
+vim.opt.wrap = false -- No Wrap lines
+vim.opt.backspace = { 'start', 'eol', 'indent' }
+vim.opt.path:append { '**' } -- Finding files - Search down into subfolders
+vim.opt.wildignore:append { '*/node_modules/*' }

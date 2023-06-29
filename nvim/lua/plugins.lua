@@ -123,5 +123,10 @@ require("lazy").setup({
             require('lualine').setup()
         end
     },
-    { 'neovim/nvim-lspconfig'}
+    { 'neovim/nvim-lspconfig'},
+    {
+      "glepnir/lspsaga.nvim",
+      event = "LspAttach",
+      dependencies = { {"nvim-tree/nvim-web-devicons"} }
+    }
 })
